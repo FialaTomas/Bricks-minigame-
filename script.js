@@ -137,9 +137,9 @@ function collisionDetection() {
       if (b.status === 1) {
         if (
           x > b.x &&
-          x < b.x + brickWidth &&
+          x < b.x + brickWidth + ballRadius &&
           y > b.y &&
-          y < b.y + brickHeight
+          y < b.y + brickHeight + ballRadius
         ) {
           dy = -dy;
           b.status = 0;
